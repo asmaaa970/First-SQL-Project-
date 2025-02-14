@@ -48,20 +48,35 @@ CREATE TABLE retailsales
 - **Missing Data Handling:** Detect null values in the dataset and remove incomplete records.
   
   ```sql
-SELECT TOP 10 * FROM retailsales;
-SELECT count(*) from retailsales ;
-SELECT * FROM retailsales
-  WHERE transactions_id is null OR sale_date is null OR
-  sale_time is null OR customer_id is null OR
-  gender is null OR age is null OR 
-  category is null OR quantiy is null OR
-  price_per_unit is null OR cogs is null OR 
-  total_sale is null
-  Delete from retailsales
-  WHERE transactions_id is null 
-  OR sale_date is null OR sale_time is null OR customer_id is null OR gender is null
-  OR age is null OR  category is null OR quantiy is null
-  OR price_per_unit is null OR cogs is null OR total_sale is null ;
+SELECT TOP 10 * FROM retailsales;  
+
+SELECT COUNT(*) FROM retailsales;  
+
+SELECT * FROM retailsales  
+WHERE transactions_id IS NULL  
+   OR sale_date IS NULL  
+   OR sale_time IS NULL  
+   OR customer_id IS NULL  
+   OR gender IS NULL  
+   OR age IS NULL  
+   OR category IS NULL  
+   OR quantity IS NULL  
+   OR price_per_unit IS NULL  
+   OR cogs IS NULL  
+   OR total_sale IS NULL;  
+
+DELETE FROM retailsales  
+WHERE transactions_id IS NULL  
+   OR sale_date IS NULL  
+   OR sale_time IS NULL  
+   OR customer_id IS NULL  
+   OR gender IS NULL  
+   OR age IS NULL  
+   OR category IS NULL  
+   OR quantity IS NULL  
+   OR price_per_unit IS NULL  
+   OR cogs IS NULL  
+   OR total_sale IS NULL;
   ```
   
 
