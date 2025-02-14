@@ -152,7 +152,7 @@ SELECT
 ```
 ## **Findings**
 
-- Customer Demographics: The dataset includes customers from various age groups, with sales distributed across multiple categories such as Clothing and Beauty.
+- **Customer Demographics:** The dataset includes customers from various age groups, with sales distributed across multiple categories such as Clothing and Beauty.
 
 - **High-Value Transactions:** Several transactions exceeded a total sale amount of 1,000, indicating premium purchases.
 
