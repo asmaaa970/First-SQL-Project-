@@ -150,6 +150,28 @@ SELECT
 	FROM retailsales) as X2
 	GROUP BY shift ;
 ```
+## **Findings**
+
+- Customer Demographics: The dataset includes customers from various age groups, with sales distributed across multiple categories such as Clothing and Beauty.
+
+- High-Value Transactions: Several transactions exceeded a total sale amount of 1,000, indicating premium purchases.
+
+- Sales Trends: Monthly analysis highlights fluctuations in sales, helping to identify peak seasons.
+
+- Customer Insights: The analysis reveals top-spending customers and the most popular product categories.
+  
+  ## **Reports**
+
+- Sales Summary: A comprehensive report detailing total sales, customer demographics, and category performance.
+
+- Trend Analysis: Insights into sales trends across different months and time shifts.
+
+- Customer Insights: Reports identifying top customers and unique customer counts per category.
+
+ ## **Conclusion**
+
+This project provides a structured approach to SQL for data analysis, covering database setup, data cleaning, exploratory data analysis, and business-driven SQL queries. The insights derived from this analysis can support business decisions by revealing sales patterns, customer behavior, and product performance.
+
 
 
 
