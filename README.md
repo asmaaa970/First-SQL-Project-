@@ -47,23 +47,18 @@ CREATE TABLE retailsales
 - **Product Categories:** List all unique product categories available.
 - **Missing Data Handling:** Detect null values in the dataset and remove incomplete records.
   
-  ``` sql
- SELECT TOP 10 * 
-FROM retailsales;
-```
-select count(*)
-from retailsales ;
-```
-  select * 
-from retailsales
-  where transactions_id is null OR sale_date is null  OR
+  ```sql
+SELECT TOP 10 * FROM retailsales;
+SELECT count(*) from retailsales ;
+SELECT * FROM retailsales
+  WHERE transactions_id is null OR sale_date is null OR
   sale_time is null OR customer_id is null OR
   gender is null OR age is null OR 
   category is null OR quantiy is null OR
   price_per_unit is null OR cogs is null OR 
   total_sale is null
   Delete from retailsales
-  where transactions_id is null 
+  WHERE transactions_id is null 
   OR sale_date is null OR sale_time is null OR customer_id is null OR gender is null
   OR age is null OR  category is null OR quantiy is null
   OR price_per_unit is null OR cogs is null OR total_sale is null ;
