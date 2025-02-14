@@ -13,9 +13,9 @@ This project aims to showcase SQL skills and techniques commonly used by data an
 - Business Analysis: Use SQL to answer business-related questions and extract insights.
 
  ## Project Structure
- Database Setup:
-### database named p1_retail_db is created.
-### Table Creation:
+## Database Setup:
+##### database named p1_retail_db is created.
+##### Table Creation:
 
 A table named retail_sales is created to store sales data, including the following columns:
 Transaction ID
