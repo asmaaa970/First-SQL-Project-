@@ -14,8 +14,8 @@ This project aims to showcase SQL skills and techniques commonly used by data an
 
  ## Project Structure
  ###  1. **Database Setup:**
- - **Database Creation:** The project starts by creating a database named p1_retail_db.
- - **Table Creation:** A table named `retail_sales` is created to store sales data, including the following columns:
+ - **Database Creation:** The project starts by creating a database named `SQL_Project1.`
+ - **Table Creation:** A table named `retailsales` is created to store sales data, including the following columns:
 Transaction ID
 Sale date & time
 Customer ID, gender, and age
@@ -26,7 +26,7 @@ Total sale amount
 ``` sql
 CREATE DATABASE p1_retail_db;
 
-CREATE TABLE retail_sales
+CREATE TABLE retailsales
 (
     transactions_id INT PRIMARY KEY,
     sale_date DATE,	
@@ -46,6 +46,29 @@ CREATE TABLE retail_sales
 - **Unique Customers:** Count the distinct customers present in the dataset.
 - **Product Categories:** List all unique product categories available.
 - **Missing Data Handling:** Detect null values in the dataset and remove incomplete records.
+  ``` sql
+
+
+ SELECT TOP 10 * 
+FROM retailsales;
+---
+select count(*)
+from retailsales ; 
+  select * 
+from retailsales
+  where transactions_id is null OR sale_date is null  OR
+  sale_time is null OR customer_id is null OR
+  gender is null OR age is null OR 
+  category is null OR quantiy is null OR
+  price_per_unit is null OR cogs is null OR 
+  total_sale is null
+  Delete from retailsales
+  where transactions_id is null 
+  OR sale_date is null OR sale_time is null OR customer_id is null OR gender is null
+  OR age is null OR  category is null OR quantiy is null
+  OR price_per_unit is null OR cogs is null OR total_sale is null ;
+  ```
+  
 
 
 
