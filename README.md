@@ -14,8 +14,8 @@ This project aims to showcase SQL skills and techniques commonly used by data an
 
  ## Project Structure
 ## Database Setup:
-##### database named p1_retail_db is created.
-##### Table Creation:A table named retail_sales is created to store sales data, including the following columns:
+### database named p1_retail_db is created.
+### Table Creation:A table named retail_sales is created to store sales data, including the following columns:
 Transaction ID
 Sale date & time
 Customer ID, gender, and age
