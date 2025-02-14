@@ -13,7 +13,7 @@ This project aims to showcase SQL skills and techniques commonly used by data an
 -**Business Analysis:** Use SQL to answer business-related questions and extract insights.
 
  ## Project Structure
-1 ### **Database Setup:**
+ ###  1. **Database Setup:**
  - **Database Creation:** The project starts by creating a database named p1_retail_db.
  - **Table Creation:** A table named `retail_sales` is created to store sales data, including the following columns:
 Transaction ID
@@ -41,7 +41,7 @@ CREATE TABLE retail_sales
     total_sale FLOAT
 );
 ```
- ### 2 **Data Exploration & Cleaning**
+ ### 2. **Data Exploration & Cleaning**
 - **Total Records:** Calculate the overall number of entries in the dataset.
 - **Unique Customers:** Count the distinct customers present in the dataset.
 - **Product Categories:** List all unique product categories available.
