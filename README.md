@@ -62,13 +62,18 @@ WHERE
     sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR 
     gender IS NULL OR age IS NULL OR category IS NULL OR 
     quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
+How many sales we have ?
+  select count(*) as total_sales
+  from retailsales ;
+
+How many customer we have ?
+  select  count(distinct transactions_id) as customers_num
+   from retailsales;
+
+How many category we have ?
+   select distinct category as uniqe_category
+    from retailsales ;
 ```
-### 3.**Data Analysis & Findings**
-The following SQL queries were developed to answer specific business questions:
-
-1.**Write a SQL query to retrieve all columns for sales made on '2022-11-05:**
-``` sql
-
 
 
 
