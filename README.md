@@ -46,40 +46,23 @@ CREATE TABLE retailsales
 - **Unique Customers:** Count the distinct customers present in the dataset.
 - **Product Categories:** List all unique product categories available.
 - **Missing Data Handling:** Detect null values in the dataset and remove incomplete records.
-  
-  ``` sql
-SELECT TOP 10 * FROM retailsales;  
+``` sql
+  SELECT COUNT(*) FROM retail_sales;
+SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
+SELECT DISTINCT category FROM retail_sales;
 
-SELECT COUNT(*) FROM retailsales;  
+SELECT * FROM retail_sales
+WHERE 
+    sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR 
+    gender IS NULL OR age IS NULL OR category IS NULL OR 
+    quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
 
-SELECT * FROM retailsales  
-WHERE transactions_id IS NULL  
-   OR sale_date IS NULL  
-   OR sale_time IS NULL  
-   OR customer_id IS NULL  
-   OR gender IS NULL  
-   OR age IS NULL  
-   OR category IS NULL  
-   OR quantity IS NULL  
-   OR price_per_unit IS NULL  
-   OR cogs IS NULL  
-   OR total_sale IS NULL;  
-
-DELETE FROM retailsales  
-WHERE transactions_id IS NULL  
-   OR sale_date IS NULL  
-   OR sale_time IS NULL  
-   OR customer_id IS NULL  
-   OR gender IS NULL  
-   OR age IS NULL  
-   OR category IS NULL  
-   OR quantity IS NULL  
-   OR price_per_unit IS NULL  
-   OR cogs IS NULL  
-   OR total_sale IS NULL;
-  ```
-  
-
+DELETE FROM retail_sales
+WHERE 
+    sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR 
+    gender IS NULL OR age IS NULL OR category IS NULL OR 
+    quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
+```
 
 
 
