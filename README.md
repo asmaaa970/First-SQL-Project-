@@ -47,7 +47,7 @@ CREATE TABLE retailsales
 - **Product Categories:** List all unique product categories available.
 - **Missing Data Handling:** Detect null values in the dataset and remove incomplete records.
   
-  ```sql
+  ``` sql
 SELECT TOP 10 * FROM retailsales;  
 
 SELECT COUNT(*) FROM retailsales;  
