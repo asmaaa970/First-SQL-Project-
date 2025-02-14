@@ -94,7 +94,7 @@ SELECT AVG(age) as avg_age
 	FROM retailsales
 	WHERE category = 'Beauty';
 ```
-5.** find all transactions where the total_sale is greater than 1000.**
+5.**find all transactions where the total_sale is greater than 1000.**
 ``` sql
 SELECT * 
 	FROM retailsales
