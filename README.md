@@ -71,7 +71,7 @@ WHERE
 FROM retail_sales
 WHERE sale_date = '2022-11-05'
 ```
-2.**Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022:**
+2.**retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022:**
 ``` sql
 SELECT *
 	FROM retailsales
@@ -80,7 +80,7 @@ SELECT *
 	AND quantiy >= 4 
 	AND category = 'Clothing' ;
 ```
-3.**Write a SQL query to calculate the total sales (total_sale) for each category.**
+3.**calculate the total sales (total_sale) for each category.**
 ``` sql
 SELECT  category ,
 	SUM(total_sale) as total_sales,
@@ -88,13 +88,68 @@ SELECT  category ,
 	FROM retailsales
 	GROUP BY  category;
 ```
-
-
-
-
-
-
-
+4.**find the average age of customers who purchased items from the 'Beauty' category.**
+``` sql
+SELECT AVG(age) as avg_age
+	FROM retailsales
+	WHERE category = 'Beauty';
+```
+5.** find all transactions where the total_sale is greater than 1000.**
+``` sql
+SELECT * 
+	FROM retailsales
+	WHERE total_sale > 1000 ;
+```
+6.**find the total number of transactions (transaction_id) made by each gender in each category.**
+``` sql
+SELECT  gender , category  ,count(transactions_id) as total_transaction
+	FROM retailsales
+	GROUP BY gender
+	, category;
+```
+7.**calculate the average sale for each month. Find out best selling month in each year**
+``` sql
+WITH X1 AS (
+    SELECT
+        YEAR(sale_date) AS year, 
+        MONTH(sale_date) AS month, 
+        AVG(total_sale) AS avg_sale, 
+        RANK() OVER (PARTITION BY YEAR(sale_date) ORDER BY AVG(total_sale) DESC) AS sales_rank
+    FROM retailsales
+    group by YEAR(sale_date), MONTH(sale_date)
+)
+ SELECT year , month , avg_sale 
+ FROM X1
+ where sales_rank = 1 ;
+```
+8.**find the top 5 customers based on the highest total sales**
+``` sql
+SELECT  top 5  customer_id , sum(total_sale) as total_sales 
+ FROM retailsales
+ GROUP BY  customer_id 
+ ORDER BY  sum(total_sale) desc;
+```
+9.**find the number of unique customers who purchased items from each category.**
+``` sql
+SELECT COUNT(distinct customer_id) as uniqe_customers, category 
+ FROM retailsales
+ GROUP BY  category ;
+```
+10.**create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)**
+``` sql
+SELECT
+	shift,
+	COUNT(*) as total_orders 
+	FROM (
+	SELECT * ,
+	CASE 
+	WHEN datepart(Hour ,sale_time) < 12 then 'Morning'
+        WHEN datepart(Hour ,sale_time) between  12 and 17  then 'Afternoon'
+	ELSE 'Evening'
+	END AS  shift 
+	FROM retailsales) as X2
+	GROUP BY shift ;
+```
 
 
 
