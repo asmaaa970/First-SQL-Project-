@@ -40,6 +40,7 @@ CREATE TABLE retail_sales
     cogs FLOAT,
     total_sale FLOAT
 );
+```
 -  ## 2 **Data Exploration & Cleaning**
 - **Total Records:** Calculate the overall number of entries in the dataset.
 - **Unique Customers:** Count the distinct customers present in the dataset.
