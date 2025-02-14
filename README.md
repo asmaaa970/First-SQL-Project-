@@ -49,8 +49,11 @@ CREATE TABLE retailsales
   ``` sql
  SELECT TOP 10 * 
 FROM retailsales;
+```
+``` sql
 select count(*)
-from retailsales ; 
+from retailsales ;
+```
   select * 
 from retailsales
   where transactions_id is null OR sale_date is null  OR
