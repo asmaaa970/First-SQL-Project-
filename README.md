@@ -154,19 +154,19 @@ SELECT
 
 - Customer Demographics: The dataset includes customers from various age groups, with sales distributed across multiple categories such as Clothing and Beauty.
 
-- High-Value Transactions: Several transactions exceeded a total sale amount of 1,000, indicating premium purchases.
+- **High-Value Transactions:** Several transactions exceeded a total sale amount of 1,000, indicating premium purchases.
 
-- Sales Trends: Monthly analysis highlights fluctuations in sales, helping to identify peak seasons.
+- **Sales Trends:** Monthly analysis highlights fluctuations in sales, helping to identify peak seasons.
 
-- Customer Insights: The analysis reveals top-spending customers and the most popular product categories.
+- **Customer Insights:** The analysis reveals top-spending customers and the most popular product categories.
   
   ## **Reports**
 
-- Sales Summary: A comprehensive report detailing total sales, customer demographics, and category performance.
+- **Sales Summary:** A comprehensive report detailing total sales, customer demographics, and category performance.
 
-- Trend Analysis: Insights into sales trends across different months and time shifts.
+- **Trend Analysis:** Insights into sales trends across different months and time shifts.
 
-- Customer Insights: Reports identifying top customers and unique customer counts per category.
+- **Customer Insights:** Reports identifying top customers and unique customer counts per category.
 
  ## **Conclusion**
 
