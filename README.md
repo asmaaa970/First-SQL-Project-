@@ -46,11 +46,11 @@ CREATE TABLE retailsales
 - **Unique Customers:** Count the distinct customers present in the dataset.
 - **Product Categories:** List all unique product categories available.
 - **Missing Data Handling:** Detect null values in the dataset and remove incomplete records.
+  
   ``` sql
  SELECT TOP 10 * 
 FROM retailsales;
 ```
-``` sql
 select count(*)
 from retailsales ;
 ```
