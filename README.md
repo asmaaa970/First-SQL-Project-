@@ -65,20 +65,28 @@ WHERE
 ```
 ## **3. Data Analysis & Findings**
  The following SQL queries were developed to answer specific business questions:
-- **1. retrieve all columns for sales made on '2022-11-05**
+1. **retrieve all columns for sales made on '2022-11-05**
 ``` sql
   SELECT *
 FROM retail_sales
 WHERE sale_date = '2022-11-05'
 ```
-2.**retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022:**
+2.**Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022:**
 ``` sql
 SELECT *
 	FROM retailsales
-	WHERE  year(sale_date) = 2022  
+	WHERE year(sale_date) = 2022  
 	AND month(sale_date) = 11
 	AND quantiy >= 4 
 	AND category = 'Clothing' ;
+```
+3.**Write a SQL query to calculate the total sales (total_sale) for each category.**
+``` sql
+SELECT  category ,
+	SUM(total_sale) as total_sales,
+	COUNT(*) as total_orders
+	FROM retailsales
+	GROUP BY  category;
 ```
 
 
