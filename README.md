@@ -160,7 +160,7 @@ SELECT
 
 - **Customer Insights:** The analysis reveals top-spending customers and the most popular product categories.
   
-  ## **Reports**
+## **Reports**
 
 - **Sales Summary:** A comprehensive report detailing total sales, customer demographics, and category performance.
 
