@@ -178,7 +178,7 @@ This project provides a structured approach to SQL for data analysis, covering d
 - **Run the Queries:** Use the SQL queries provided in the analysis_queries.sql file to perform your analysis.
 - **Explore and Modify:** Feel free to modify the queries to explore different aspects of the dataset or answer additional business questions.
 
-# **Author - Asmaa Ahmed**
+## **Author - Asmaa Ahmed**
 This project is part of my portfolio, showcasing my SQL and data analysis skills. If you have any questions or feedback, feel free to reach out to me on LinkedIn!
 [Connect with me on LinkedIn](https://eg.linkedin.com/in/asmaa-ahmed-375912222)
 
